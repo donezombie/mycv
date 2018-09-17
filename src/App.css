@@ -14,8 +14,8 @@
 }
 
 #avatar {
-  width: 200px;
-  height: 200px;
+  width: 170px;
+  height: 170px;
   border: 0px;
   border-radius: 50%;
   box-shadow: 0px 1px 12px 5px rgb(230, 224, 224);
@@ -29,7 +29,20 @@
 
 #footerImg {
   width: 100vw;
-  height: 5vh;
+  height: 10vh;
   position: absolute;
   bottom: 0;
+}
+
+.logo{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+#footerImg img {
+  transition: all 1s;
+}
+
+#footerImg img:hover {
+  transform: scale(1.1);
 }
