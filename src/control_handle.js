@@ -1,0 +1,2 @@
+export const imgAvatar = `https://scontent.fhan5-1.fna.fbcdn.net/v/t1.0-9/41342899_1237304636412074_783851447283351552_n.jpg?_nc_cat=0&_nc_eui2=AeGQTZwKLz_ZB21bPn6YOM9OR0hMCV5JIDDkDs00L4OGI-13k1YDNhRZ9Po-JM3lP2XBrN0kdXdhXbZDVj-LIheVaAqDwXyr0h0K7el5e-be4Q&oh=4476a0e6c1251c7cc13730071f5adbc0&oe=5C1A8F4C`;
+export const name = `Phạm Phú Quý Đôn`;
