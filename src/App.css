@@ -1,3 +1,12 @@
+@fontface {
+  font-family: 'Bungee Inline', cursive;
+  src: url('https://fonts.googleapis.com/css?family=Bungee+Inline')
+}
+
+body {
+  font-family: 'Bungee Inline', cursive;
+}
+
 .background-header {
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.8) 100%), url('../src/images/bg2.jpg');
   background-repeat: no-repeat;
@@ -45,4 +54,16 @@
 
 #footerImg img:hover {
   transform: scale(1.1);
+}
+
+.wrap {
+  height: 100vh;
+}
+
+.shadow{
+  box-shadow: 2px 3px 10px -2px black;
+}
+
+div#title p{
+  font-weight: bold;
 }
