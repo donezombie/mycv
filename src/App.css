@@ -4,7 +4,17 @@
 }
 
 body {
-  font-family: 'Bungee Inline', cursive;
+  font-family: 'Allerta Stencil', sans-serif;
+}
+
+header>nav{
+  transition: all 0.3s;
+  transition-delay: 0.2s;
+}
+
+.bg-black { 
+  background-color: black;
+  opacity: 1;
 }
 
 .background-header {

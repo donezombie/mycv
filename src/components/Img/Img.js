@@ -3,6 +3,7 @@ import { Tooltip, OverlayTrigger } from 'react-bootstrap';
 import bg from '../../images/bg2.jpg';
 import logofb from '../../images/logofb.jpg';
 import { imgAvatar, name } from '../../control_handle';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 
 class Img extends Component {
 
@@ -18,7 +19,7 @@ class Img extends Component {
           </div>
 
           <div className="w-100 mt-4 d-flex justify-content-around">
-            <button type="button" className="btn btn-outline-light">Button 1</button>
+            <AnchorLink offset={() => 100} href="#aboutme"><button type="button" className="btn btn-outline-light">About Me</button></AnchorLink>
             <button type="button" className="btn btn-outline-light">Button 2</button>
           </div>
         </div>
