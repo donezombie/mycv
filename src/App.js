@@ -4,6 +4,7 @@ import './App.css';
 import Navigations from './components/Navbar/Navbar';
 import Img from './components/Img/Img';
 import Wrap from './components/Wrap/Wrap';
+import Footer from './components/Footer/Footer';
 
 class App extends Component {
   constructor(props) {
@@ -19,6 +20,9 @@ class App extends Component {
         <Img />
         </header>
         <Wrap />
+        <footer className="mt-5">
+          <Footer />
+        </footer>
       </div>
     );
   }

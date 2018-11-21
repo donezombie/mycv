@@ -3,6 +3,11 @@
   src: url('https://fonts.googleapis.com/css?family=Bungee+Inline')
 }
 
+* {
+  box-sizing: border-box;
+}
+
+
 body {
   font-family: 'Allerta Stencil', sans-serif;
 }
@@ -67,7 +72,7 @@ header>nav{
 }
 
 .wrap {
-  height: 100vh;
+  height: auto;
 }
 
 .shadow{
@@ -76,4 +81,58 @@ header>nav{
 
 div#title p{
   font-weight: bold;
+}
+
+#footer {
+  width: 100%;
+  height: 300px;
+  padding: 20px;
+  background-color: black;
+}
+
+.leftBackground {
+  background-color: black
+}
+
+.EducationItem {
+  height: 200px;
+}
+
+.text1 {
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.text2>p {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: grey;
+}
+
+#ButtonBack {
+  transition: all 0.4s;
+  position: sticky;
+  bottom: 0;
+}
+
+#ButtonBack:hover {
+  transform: scale(1, 1.1);
+}
+
+#back{
+  position: absolute;
+  font-size: 50px;
+  bottom: 10px;
+  color: black;
+  right: 20px;
+}
+
+@media (max-width: 600px) {
+  #footer {
+    height: 200px;
+  }
+
+  .EducationItem {
+    height: 100px;
+  }
 }

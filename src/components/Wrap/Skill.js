@@ -8,11 +8,13 @@ const maxHTML = 80;
 const maxJS = 75;
 const maxPython = 60;
 const maxCSS = 80;
+let testInterval;
 class Skill extends Component {
   constructor(props) {
     super(props);
     this.props = props;
     this.state = {
+      run: false,
       html: 0,
       JavaScript: 0,
       python: 0,
@@ -24,12 +26,8 @@ class Skill extends Component {
   actionAfterAnimation(visible) {
     const { html, JavaScript, python, css } = this.state;
     if (visible.onScreen || visible.inViewPort) {
-      if (html < maxHTML) {
-        this.setState({
-          html: html + 1,
-        })
-      }
       this.setState({
+        html: 80,
         JavaScript: 75,
         python: 60,
         css: 80,
@@ -45,22 +43,16 @@ class Skill extends Component {
     }
   }
 
-  // test() {
-  //   const { html } = this.state;
-  //   this.setState({
-  //     html: html - 1,
-  //   });
-  // }
 
   render() {
     const { html, JavaScript, python, css } = this.state;
     return (
       <ScrollAnimation animateIn="fadeIn" afterAnimatedIn={(visible) => {this.actionAfterAnimation(visible)}}>
+      <div className="justify-content-center d-flex p-2"><h3 className="font-weight-bold"> Skill </h3></div>
       <div className="row">
-      {/* <button onClick={() => {this.test()}}>Test</button> */}
         <div className="offset-md-2" />
         <div className="col-md-8 border border-0 shadow p-3">
-          <h3 className="pb-3 font-weight-bold"> Skill</h3>
+          <h3 className="pb-3 font-weight-bold" style={{display: 'none'}}> Skill</h3>
           <Row>
             <Col md={{size: 3, offset: 2}}>
               <p>HTML {html}%</p>
