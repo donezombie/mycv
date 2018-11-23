@@ -5,14 +5,14 @@
 
 * {
   box-sizing: border-box;
+  /* margin: auto; */
 }
-
 
 body {
   font-family: 'Allerta Stencil', sans-serif;
 }
 
-header>nav{
+.row>nav{
   transition: all 0.3s;
   transition-delay: 0.2s;
 }
@@ -26,7 +26,7 @@ header>nav{
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.8) 100%), url('../src/images/bg2.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   position: relative;
 }
@@ -42,8 +42,10 @@ header>nav{
   height: 170px;
   border: 0px;
   border-radius: 50%;
-  box-shadow: 0px 1px 12px 5px rgb(230, 224, 224);
   transition: all 1s;
+  animation: scaleShadow 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 #avatar:hover {
@@ -134,5 +136,14 @@ div#title p{
 
   .EducationItem {
     height: 100px;
+  }
+}
+
+@keyframes scaleShadow {
+  from {
+    box-shadow: 1px 1px 12px 1px rgb(230, 224, 224);
+  }
+  to {
+    box-shadow: 1px 1px 12px 8px rgb(230, 224, 224);
   }
 }

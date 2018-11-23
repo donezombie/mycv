@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
+import { Row } from 'reactstrap';
 import './App.css';
 import Navigations from './components/Navbar/Navbar';
 import Img from './components/Img/Img';
@@ -15,14 +16,14 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <header>
-        <Navigations />
-        <Img />
-        </header>
+        <Row>
+          <Navigations />
+          <Img />
+        </Row>
         <Wrap />
-        <footer className="mt-5">
+        <Row className="mt-5">
           <Footer />
-        </footer>
+        </Row>
       </div>
     );
   }

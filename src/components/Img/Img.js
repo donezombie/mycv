@@ -11,7 +11,9 @@ class Img extends Component {
     return (
       <div id="home" className="background-header d-flex justify-content-center align-items-center">
         <div className="text-light d-flex flex-column align-items-center">
-          <a href="https://facebook.com/donezombiee" target="_blank" rel="noopener noreferrer"><img className="animated fadeIn" id="avatar" src={imgAvatar} /></a>
+          <a href="https://facebook.com/donezombiee" target="_blank" rel="noopener noreferrer">
+            <img className="animated fadeIn avatar-shadowAnimation" id="avatar" src={imgAvatar} />
+          </a>
 
           <div className="mt-4">
             <h2 className="text-center font-weight-bold">{name}</h2>
