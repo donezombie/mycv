@@ -1,14 +1,9 @@
 import React, { Component } from 'react';
-import { Progress, Row, Col } from 'reactstrap';
-import { Line, Circle } from 'rc-progress';
+import { Row, Col } from 'reactstrap';
+import { Circle } from 'rc-progress';
 import ScrollAnimation from 'react-animate-on-scroll';
 
 
-const maxHTML = 80;
-const maxJS = 75;
-const maxPython = 60;
-const maxCSS = 80;
-let testInterval;
 class Skill extends Component {
   constructor(props) {
     super(props);
@@ -24,7 +19,6 @@ class Skill extends Component {
   }
 
   actionAfterAnimation(visible) {
-    const { html, JavaScript, python, css } = this.state;
     if (visible.onScreen || visible.inViewPort) {
       this.setState({
         html: 80,
@@ -32,7 +26,6 @@ class Skill extends Component {
         python: 60,
         css: 80,
       })
-      console.log("inViewPoint");
     } else {
       this.setState({
         html: 0,
@@ -49,7 +42,7 @@ class Skill extends Component {
     return (
       <ScrollAnimation animateIn="fadeIn" afterAnimatedIn={(visible) => {this.actionAfterAnimation(visible)}}>
       <div className="justify-content-center d-flex p-2"><h3 className="font-weight-bold"> Skill </h3></div>
-      <div className="row">
+      <div id="myskill" className="row">
         <div className="offset-md-2" />
         <div className="col-md-8 border border-0 shadow p-3">
           <h3 className="pb-3 font-weight-bold" style={{display: 'none'}}> Skill</h3>

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import { Row } from 'reactstrap';
 import './App.css';
 import Navigations from './components/Navbar/Navbar';
@@ -15,7 +14,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="App" id="home">
         <Row>
           <Navigations />
           <Img />

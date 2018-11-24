@@ -129,13 +129,31 @@ div#title p{
   right: 20px;
 }
 
-@media (max-width: 600px) {
+table tr td{
+  padding-bottom: 15px !important;
+}
+
+table tr th{
+  padding-right: 1.5rem!important;
+  padding-bottom: 15px !important;
+}
+
+@media (max-width: 650px) {
   #footer {
     height: 200px;
   }
 
+  #AboutTable {
+    margin-left: 2.5rem;
+  }
+
+  #aboutText {
+    display: flex;
+    justify-content: center;
+  }
+
   .EducationItem {
-    height: 100px;
+    height: auto;
   }
 }
 

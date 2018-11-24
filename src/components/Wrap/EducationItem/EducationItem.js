@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { Col, Row } from 'reactstrap';
-import PropTypes from 'prop-types';
 
 class EducationItem extends Component {
   render() {
