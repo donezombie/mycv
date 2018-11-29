@@ -47,24 +47,24 @@ class Skill extends Component {
         <div className="col-md-8 border border-0 shadow p-3">
           <h3 className="pb-3 font-weight-bold" style={{display: 'none'}}> Skill</h3>
           <Row>
-            <Col md={{size: 3, offset: 2}}>
-              <p>HTML {html}%</p>
+            <Col className="skill" md={{size: 3, offset: 2}}>
+              <p> HTML {html}%</p>
               <Circle strokeLinecap="round" percent={html} strokeWidth="3" strokeColor="#1b1b1b" trailColor="#D3D3D3"/>
             </Col>
 
-            <Col md={{size: 3, offset: 2}}>
+            <Col className="skill" md={{size: 3, offset: 2}}>
               <p>JavaScript {JavaScript}%</p>
               <Circle percent={JavaScript} strokeWidth="3" strokeColor="#1b1b1b" trailColor="#D3D3D3" />  
             </Col>
           </Row>
 
           <Row className="mt-5">
-            <Col md={{size: 3, offset: 2}}>
+            <Col className="skill" md={{size: 3, offset: 2}}>
               <p>Python {python}%</p>
               <Circle percent={python} strokeWidth="3" strokeColor="#1b1b1b" trailColor="#D3D3D3"/>
             </Col>
 
-            <Col md={{size: 3, offset: 2}}>
+            <Col className="skill" md={{size: 3, offset: 2}}>
               <p>CSS {css}%</p>
               <Circle percent={css} strokeWidth="3" strokeColor="#1b1b1b" trailColor="#D3D3D3" />  
             </Col>

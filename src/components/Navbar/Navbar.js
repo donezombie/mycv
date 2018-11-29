@@ -25,12 +25,12 @@ class Navigations extends Component {
     const { isTop } = this.state;
     return (
       <nav className={isTop ? 'fixed-top navbar navbar-expand-lg navbar-dark' : 'fixed-top navbar navbar-expand-lg navbar-dark bg-black'}>
-        <AnchorLink className="navbar-brand" offset={() => 150} href="#home">Home</AnchorLink>
+        {/* <AnchorLink className="navbar-brand" offset={() => 150} href="#home">Home</AnchorLink> */}
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul className="navbar-nav">
+          <ul className="navbar-nav w-100 d-flex justify-content-end">
             <li className="nav-item">
               <AnchorLink className="nav-link" offset={() => 150} href="#aboutme">About Me</AnchorLink>
             </li>

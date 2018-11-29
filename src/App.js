@@ -5,7 +5,7 @@ import Navigations from './components/Navbar/Navbar';
 import Img from './components/Img/Img';
 import Wrap from './components/Wrap/Wrap';
 import Footer from './components/Footer/Footer';
-
+import './Card.css';
 class App extends Component {
   constructor(props) {
     super(props);
@@ -14,15 +14,15 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App" id="home">
+      <div className="App">
         <Row>
           <Navigations />
           <Img />
         </Row>
         <Wrap />
-        <Row className="mt-5">
+        {/* <Row id="footer" className="mt-5">
           <Footer />
-        </Row>
+        </Row> */}
       </div>
     );
   }

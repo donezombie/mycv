@@ -10,11 +10,16 @@
 
 body {
   font-family: 'Allerta Stencil', sans-serif;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
 }
 
+
 .row>nav{
-  transition: all 0.3s;
-  transition-delay: 0.2s;
+  transition: all 0.1s;
+  transition-delay: 0.1s;
 }
 
 .bg-black { 
@@ -23,7 +28,7 @@ body {
 }
 
 .background-header {
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.8) 100%), url('../src/images/bg2.jpg');
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.8) 100%), url('../src/images/IMG_1203.PNG');
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -43,9 +48,11 @@ body {
   border: 0px;
   border-radius: 50%;
   transition: all 1s;
-  animation: scaleShadow 2s;
+  animation: scaleShadow 0.5s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  object-fit: cover;
+  object-position: 50% 50%;
 }
 
 #avatar:hover {
@@ -65,7 +72,21 @@ body {
   height: 50px;
   border-radius: 50%;
 }
+
+#footerImg a{ 
+  transition: all 0.6s;
+}
+
+#footerImg a:hover {
+  transform: scale(1.05);
+}
+
+#footerImg a:hover img{
+  box-shadow: 0 0 10px 5px #ccc;
+}
+
 #footerImg img {
+  border-radius: 50%;
   transition: all 1s;
 }
 
@@ -129,6 +150,10 @@ div#title p{
   right: 20px;
 }
 
+ul.navbar-nav li a{
+  color: white !important;
+}
+
 table tr td{
   padding-bottom: 15px !important;
 }
@@ -148,18 +173,32 @@ table tr th{
   }
 
   #aboutText {
-    display: flex;
-    justify-content: center;
+    display: block;
+  }
+  #aboutText p {
+    padding: 0.5rem;
+  }
+  .row #aboutTextP {
+    padding: 0.5rem;
   }
 
   .EducationItem {
     height: auto;
   }
+
+  .row .skill {
+    width: 50%;
+  }
+
+  #back {
+    bottom: 0;
+    font-size: 30px;
+  }
 }
 
 @keyframes scaleShadow {
   from {
-    box-shadow: 1px 1px 12px 1px rgb(230, 224, 224);
+    box-shadow: 1px 1px 12px 4px rgb(230, 224, 224);
   }
   to {
     box-shadow: 1px 1px 12px 8px rgb(230, 224, 224);

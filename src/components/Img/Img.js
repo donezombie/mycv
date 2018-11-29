@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logofb from '../../images/logofb.jpg';
 import { imgAvatar, name } from '../../control_handle';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-
+import './index.css';
 class Img extends Component {
 
   render() {
@@ -19,7 +19,11 @@ class Img extends Component {
           </div>
 
           <div className="w-100 mt-4 d-flex justify-content-around">
-            <AnchorLink offset={() => 150} href="#aboutme"><button type="button" className="btn btn-outline-light" style={{ width: '150px' }}><p style={{margin: 0}}>More Info</p><i className="fas fa-angle-double-down"></i></button></AnchorLink>
+            <AnchorLink offset={() => 150} href="#aboutme">
+              <button type="button" className="buttonCustomize">
+                <p style={{margin: 0}}>More Info</p><i className="fas fa-angle-double-down"></i>
+              </button>
+            </AnchorLink>
             {/* <button type="button" className="btn btn-outline-light">Button 2</button> */}
           </div>
         </div>

@@ -1,11 +1,14 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import { Col } from 'reactstrap';
 
 class Footer extends Component {
   render() {
     return (
-      <div id="footer">
-        Footer
-      </div>
+      <Col md={{size: 8, offset: 2}}>
+        <div className="h-100 d-flex justify-content-center align-items-center">
+          <p className="text-light">DoneZombie</p>
+        </div>
+      </Col>
     )
   }
 }
