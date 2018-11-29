@@ -23,7 +23,7 @@ body {
 }
 
 .bg-black { 
-  background-color: black;
+  background-color: #222;
   opacity: 1;
 }
 
@@ -110,11 +110,11 @@ div#title p{
   width: 100%;
   height: 300px;
   padding: 20px;
-  background-color: black;
+  background-color: #222;
 }
 
 .leftBackground {
-  background-color: black
+  background-color: #222
 }
 
 .EducationItem {
@@ -146,7 +146,7 @@ div#title p{
   position: absolute;
   font-size: 50px;
   bottom: 10px;
-  color: black;
+  color: #222;
   right: 20px;
 }
 
