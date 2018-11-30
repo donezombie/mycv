@@ -5,6 +5,8 @@ export class TableProps extends PureComponent {
     const { dob, relationship, email, phoneNumber, address, hobby } = this.props;
     return (
       <table id="AboutTable">
+      <thead></thead>
+      <tbody>
         <tr>
           <th>Date Of Birth: </th>
           <td>{dob}</td>
@@ -29,6 +31,7 @@ export class TableProps extends PureComponent {
           <th>Hobby: </th>
           <td>{hobby}</td>
         </tr>
+        </tbody>
       </table>
     )
   }
