@@ -20,9 +20,9 @@ class App extends Component {
           <Img />
         </Row>
         <Wrap />
-        {/* <Row id="footer" className="mt-5">
+        <Row id="footer" className="mt-5">
           <Footer />
-        </Row> */}
+        </Row>
       </div>
     );
   }

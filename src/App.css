@@ -8,6 +8,10 @@
   /* margin: auto; */
 }
 
+#home {
+  position: relative;
+}
+
 body {
   font-family: 'Allerta Stencil', sans-serif;
   padding: 0;
@@ -30,6 +34,7 @@ body {
 .background-header {
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.8) 100%), url('../src/images/IMG_1203.PNG');
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -107,8 +112,7 @@ div#title p{
 }
 
 #footer {
-  width: 100%;
-  height: 300px;
+  height: 200px;
   padding: 20px;
   background-color: #222;
 }
@@ -165,7 +169,7 @@ table tr th{
 
 @media (max-width: 650px) {
   #footer {
-    height: 200px;
+    height: 100px;
   }
 
   #AboutTable {
