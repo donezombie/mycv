@@ -6,7 +6,7 @@ class Footer extends Component {
     return (
       <Col md={{size: 8, offset: 2}}>
         <div className="h-100 d-flex justify-content-center align-items-center">
-          <p className="text-light">Sample Text</p>
+          <p className="text-light">Here is Fốter</p>
         </div>
       </Col>
     )
